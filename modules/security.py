@@ -1,3 +1,8 @@
+# =========================================================
+# Module 1: Rule-Based Password Analysis
+# Core Rule Logic: Contributed by Team Member (Jayati Shivam)
+# UI Integration & Refactoring: Developed by Mohd Shoyab
+# =========================================================
 import string
 
 def check_password_security(password):
