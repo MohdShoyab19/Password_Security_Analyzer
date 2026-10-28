@@ -10,6 +10,5 @@ A modular Capstone Project developed using Streamlit to evaluate password securi
 - **Siddhi Shree (Testing & Security Evaluation Lead):** Security validation, test case design, and system testing.
 
 ## How to Run the Application
-1. Install required dependencies:
-   ```bash
-   pip install -r requirements.txt
+1. Install dependencies: `pip install -r requirements.txt`
+2. Run app: `streamlit run app.py`
