@@ -1,5 +1,7 @@
 import streamlit as st
 from modules.security import check_password_security
+from modules.ml_model import predict_password_ml
+from modules.analytics import render_analytics_dashboard
 
 st.set_page_config(page_title="Password Security Analyzer",layout="wide")
 st.title("🔒 Intelligent Password Security Analyzer")
@@ -33,8 +35,22 @@ if choice == "Password Tester":
         if tips:
             st.markdown("**Recommendations:**")
             for tip in tips:
-                st.write(f"-{tip}") 
+                st.write(f"-{tip}")
+
+        # Machine Learning Analysis
+        st.subheader("Machine Learning Analysis Results")
+
+        # Function Call
+        ml_result = predict_password_ml(pwd)
+
+        # ML Visual Output
+        if ml_result == "Weak":
+            st.error("ML Security Prediction: Weak Password")
+        elif ml_result == "Medium":
+            st.warning("ML Security Prediction: Medium Password")
+        else:
+            st.success("ML Security Prediction: Strong Password")
 
 elif choice == "Analytics Dashboard":
     st.header("Analytics Visualizations")
-    st.write("Charts will be shown")
+    render_analytics_dashboard()
