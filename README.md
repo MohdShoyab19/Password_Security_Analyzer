@@ -4,9 +4,9 @@ A modular Capstone Project developed using Streamlit to evaluate password securi
 
 ## Team Contributions
 - **Mohd Shoyab (UI & Integration Lead):** Streamlit Web UI (`app.py`), backend integration, and control flow.
-- **Jayati Shivam (Security Module Contributor):** Rule-based analysis engine (`modules/security.py`).
-- **Sarv Shreshth (ML Contributor):** TF-IDF Vectorization and Logistic Regression classifier (`modules/ml_model.py`).
-- **Priyansh Sharma (Data Analytics Contributor):** Exploratory data analysis & plots (`modules/analytics.py`).
+- **Jayati Shivam (Security Module Lead):** Rule-based analysis engine (`modules/security.py`).
+- **Sarv Shreshth (ML Model Lead):** TF-IDF Vectorization and Logistic Regression classifier (`modules/ml_model.py`).
+- **Priyansh Sharma (Data Analytics Lead):** Exploratory data analysis & plots (`modules/analytics.py`).
 - **Siddhi Shree (Testing & Security Evaluation Lead):** Security validation, test case design, and system testing.
 
 ## How to Run the Application
